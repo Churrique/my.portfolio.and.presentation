@@ -416,3 +416,7 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# Registro Personal
+_Archivos_Varios/
+_Códigos_Temporales/

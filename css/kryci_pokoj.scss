@@ -1,0 +1,74 @@
+@import url("css/fuenteslocales.css");
+strong {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -0.125rem;
+    left: -0.5rem;
+    right: -0.5rem;
+    height: 0.67rem;
+    // Position the line behind the text so that it is still easily readable
+    z-index: -1;
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg') no-repeat cover fixed;
+    // The SVG is added as an SVG background image
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/664131/underline.svg');
+    background-repeat: no-repeat;
+    // This allows the SVG to flex in size to fit any length of word. If the word is short, the SVG will be stretched vertically, if it is long, the SVG will be stretched horizontally.
+    // The jagged nature of this particular SVG works with this transforming.
+    background-size: cover;
+  }
+}
+p > strong {
+  font-weight: 400;
+  &::after {
+    // Specific positioning for smaller text
+    bottom: -0.2rem;
+    height: 1.1rem; //tenía un valor de .5
+    left: -0.25rem;
+    right: -0.25rem;
+  }
+}
+// ---------------------------------
+// Other properties for the demo, not related to the underlined text
+body {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  /*min-height: 100vh;*/
+}
+h1, p {
+  font-family: 'Shrikhand', cursive;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 66em;
+  margin: 0 5% 1.2rem;
+}
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.125rem;
+  line-height: 1.49em;
+}
+a, a:link, a:visited, a:active {
+  text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  margin: 0em .33em;
+  color: rgba(57, 76, 94, 0.784);
+  opacity: .5;
+}
+a:hover {
+  background-color: rgba(255, 255, 255, .812);
+  color: rgba(245, 8, 8, 0.767);
+  opacity: 1;
+  transition: opacity 2s, color 3s, background-color 3s;
+}
+pre code ol li{
+  list-style-type: decimal-leading-zero;
+  background-color: darkslategray;
+  color: darkkhaki;
+}

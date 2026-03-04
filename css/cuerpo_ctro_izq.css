@@ -1,0 +1,69 @@
+@import url("../css/fuenteslocales.css");
+#ctroizq {
+/*  height: 39.891em;*/
+  width: 86%;
+  border: none;
+  background-color: rgba(140, 208, 240, 0);
+  opacity: .5;
+  border-radius: 0em;
+}
+#ctroizq:hover {
+  background-color: rgba(140, 208, 240, 0.705);
+  opacity: 1;
+  border-radius: 1em;
+  transition: opacity 3s, border-radius 4s, background-color 3s;
+}
+
+@media screen and (min-height: 1000px) and (max-height: 1160px) {
+  @media screen and (min-width: 1600px) and (max-width: 1920px) {
+    #ctroizq {
+      height: 47.4em;
+    }
+  }
+  @media screen and (min-width: 1500px) and (max-width: 1599px) {
+    #ctroizq {
+      height: 39.891em;;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1499px) {
+    #ctroizq {
+      height: 39.891em;;
+    }
+  }
+}
+
+@media screen and (min-height: 929px) and (max-height: 999px) {
+  @media screen and (min-width: 1600px) {
+    #ctroizq {
+      height: 47.4em;
+    }
+  }
+  @media screen and (min-width: 1500px) and (max-width: 1599px) {
+    #ctroizq {
+      height: 39.891em;;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1499px) {
+    #ctroizq {
+      height: 37.3em;;
+    }
+  }
+}
+
+@media screen and (max-height: 928px) {
+  @media screen and (min-width: 1600px) {
+    #ctroizq {
+      height: 47.4em;
+    }
+  }
+  @media screen and (min-width: 1500px) and (max-width: 1599px) {
+    #ctroizq {
+      height: 39.891em;;
+    }
+  }
+  @media screen and (min-width: 600px) and (max-width: 1499px) {
+    #ctroizq {
+      height: 35em;;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import url("../css/fuenteslocales.css");
+#imagendetope {
+    width: 100%;
+    height: 22vh;
+    /*height: 12.5em;*/
+}
+.texto_01 {
+    font-family: 'Kavoon', cursive;
+    font-size: 4vw;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    margin: 0.625em 0 0 0.625em;
+    color: rgba(249, 245, 246, 0.33);
+    right: 2vw;
+    top: 8vh;
+}
+body#imagendefondo {
+    background: url("../img/coches/fondo_coche_21.jpg") center center/cover no-repeat fixed ;
+    /*background-image: url("../img/coches/fondo_coche_21.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+}
+/*
+* Para el diseño responsivo hay que tener en cuenta:
+! display:inline-block
+* para estar contiguos, podríamos
+* obtener un mejor diseño.
+* Ocurre un descuadre por el relleno "padding"
+* y el tamaño del borde "border-width"
+* esto se soluciona con
+! box-sizing:border-box
+* También estan
+! max-width: 800px;
+*  y
+! min-width: 300px;
+* estas nos ayudaran a tener un control
+* más riguroso.
+TODO: el "#" va dirigido al selector de "ID"
+TODO: y el "." va dirigido al selector de "class"
+*/
