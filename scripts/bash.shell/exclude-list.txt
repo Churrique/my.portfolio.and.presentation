@@ -1,0 +1,8 @@
+/LICENSE
+/.git/
+/.gitignore
+/.vscode/
+/_Archivos_Varios/
+/_Códigos_Temporales/
+/README.md
+/my.portfolio.and.presentation.code-workspace
